@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1.0, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, srink-to-fit=no">
 <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
 <meta charset="UTF-8">
     <!-- Bootstrap CSS -->
@@ -18,70 +18,77 @@
 
 <!-- UIkit JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit.min.js"></script>
+<script src="uikit/dist/js/uikit-icons.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.31/js/uikit-icons.min.js"></script>
+<!-- Bootstrap jquery -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Meca Surface</title>
 </head>
 <body>
 <header>
-	<nav class="uk-navbar-container" uk-navbar>
-    <div class="uk-navbar-left">
 
-        <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="#">ACCUEIL</a></li>
-            <li><a href="#">SOCIÉTÉ</a></li>
-            <li>   
-                <a href="#">CEFAM ATLAS</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Table élévatrice</a></li>
-                        <li><a href="#">Monte-charge</a></li>
-                        <li><a href="#">Plateformes élévatrices</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="#">Réalisations spéciales</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>   
-                <a href="#">VISVIVO</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Grenaillage</a></li>
-                        <li><a href="#">Peinture</a></li>
-                        <li><a href="#">Séchage / Traitement de l'air</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li>   
-                <a href="#">AEB BROSSERIE</a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        <li class="uk-active"><a href="#">Machines traitement de surface du bois</a></li>
-                        <li><a href="#">Brosses</a></li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
-
-    </div>
-    <div class="uk-navbar-right">
-
-        <ul class="uk-navbar-nav">
-           <li><a href="#">CONTACT</a></li>
-           <li><a href="#">A PROPOS</a></li>
-        </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">ACCUEIL <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SOCIETE</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CONTACT</a>
+      </li>
+            <li class="nav-item">
+        <a class="nav-link" href="#">A PROPOS</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CEFAM ATLAS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Tables élévatrices</a>
+          <a class="dropdown-item" href="#">Monte-charges</a>
+          <a class="dropdown-item" href="#">Plateformes élévatrices</a>
+          <a class="dropdown-item" href="#">Réalisations spéciales</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          VISVIVO
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+          <a class="dropdown-item" href="#">Grenaillage</a>
+          <a class="dropdown-item" href="#">Peinture</a>
+          <a class="dropdown-item" href="#">Séchage / Traitement de l'air</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          AEB BROSSERIE
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+          <a class="dropdown-item" href="#">Machines traitement de surface du bois</a>
+          <a class="dropdown-item" href="#">Brosses</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </nav>
 <div class="container">
   <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <img src="https://i.imgur.com/UPSzpJJ.png" alt="logo entreprise" class="img-logo">
+      <img src="https://i.imgur.com/FigiNA9.png" alt="logo entreprise" class="img-fluid">
     
     </div>
     <div class="col-lg-9 col-md-8 col-sm-6">
-      <p class="metiers">Vendeur de matériels de manutention et levage industriel <img src="https://i.imgur.com/UNuEPkD.png" alt="logofrance" class="logoFR"><br>
-      Vendeur de matériels de traitement de surfaces mécaniques et de grenailleuses turbines <img src="https://i.imgur.com/UNuEPkD.png" alt="logofrance" class="logoFR"><br>
+      <p class="metiers">Vendeur de matériels de manutention et levage industriel <img src="https://i.imgur.com/UNuEPkD.png" alt="logofrance" class="logoFR"><br><br>
+      Vendeur de matériels de traitement de surfaces mécaniques et de grenailleuses turbines <img src="https://i.imgur.com/UNuEPkD.png" alt="logofrance" class="logoFR"><br><br>
       Vendeur de matériels et brosses pour le traitement de surface du bois </p>
     </div>
   </div>
@@ -91,6 +98,28 @@
 
 	
 		<!-- PRESENTATION GAMMES-->
+<div class="container">
+	<!-- PRESENTATION SOCIETE-->
+<div class="presentationms">
+	
+
+<b>MECA-SURFACE</b>, avec ses partenaires, répond à vos besoins :<br>
+<ul><li>Dans le domaine de l’élévation Vertical avec <b>CEFAM ATLAS</b> Fabricant, concepteur leader français dans la conception et la fabrication de tables élévatrices, de Monte charges, et d’élévateurs</li><br>
+
+<li>Dans le traitement de surfaces mécaniques avec <b>VISVIVO</b> fabricant français et concepteur de grenailleuses à turbines.</li><br> 
+
+<li>Dans le traitement du bois avec <b>AEB Brosserie</b> fabricant et concepteur Français d’installation d’égrainage de brossage et de structuration fabricant de brosses d’égrainage de brossage et de structuration </li><br></ul>
+
+<b>MECA-SURFACE</b> à votre écoute, vous propose  un devis gratuit et personnalisé, assure le suivi de vos projets, la réalisation d’essais, projet le suivi de votre commande<br><br>
+<b>MECA-SURFACE</b> vous apporte les conseils utiles nécessaires  à une bonne implantation de votre projet <br><br>
+<b>MECA-SURFACE</b> assure aussi avec ses partenaires la mise en place des installations  et le S.AV. <br>
+
+
+</div>
+<hr class="uk-divider-icon">	
+	
+</div>
+
 
 <div class="container" style="margin-top:2%;">
 
@@ -100,7 +129,7 @@
   		<img class="card-img-top" src="http://www.cefam-atlas.fr/var/cefam/storage/images/nos-produits/table-elevatrice-serie-bfx/table-elevatrice-serie-bfx-image-principale/955-1-fre-FR/Table-elevatrice-Serie-BFX-Image-principale_article-medium.jpg" alt="Card image cap">
 		  <div class="card-body">
   		   <h4 class="card-title">TABLES-ÉLÉVATRICES</h4>
-  		   <p class="card-text">Amplam et oportunam re magister tempestate latrones ut undique copiis magister missaeque latius undique periculo.</p>
+  		   <p class="card-text">Avec nos tables élévatrices mobiles, motorisées ou manuelles, vous travaillez et déplacez librement votre charge.</p>
 			  <center><a href="#" class="btn btn-primary">En savoir plus</a></center>
  		  </div>
 		</div>
@@ -110,7 +139,7 @@
   		<img class="card-img-top" src="http://www.cefam-atlas.fr/var/cefam/storage/images/media/images/monte-charge/monte-charge-a-doubles-ciseaux-verticaux/1982-1-fre-FR/Monte-charge-a-doubles-ciseaux-verticaux_domain-large.jpg" alt="Card image cap">
 		  <div class="card-body">
   		   <h4 class="card-title">MONTE-CHARGES</h4>
-  		   <p class="card-text">Amplam et oportunam re magister tempestate latrones ut undique copiis magister missaeque latius undique periculo.</p>
+  		   <p class="card-text">Monte-Charges Industriels Non Accompagnés ou Elévateurs à Usage Particulier.<br><br></p>
   		   <center><a href="#" class="btn btn-primary">En savoir plus</a></center>
  		  </div>
 		</div>
@@ -120,7 +149,7 @@
   		<img class="card-img-top" src="http://www.cefam-atlas.fr/var/cefam/storage/images/media/images/plateforme-elevatrice/plateforme-elevatrice/580-1-fre-FR/Plateforme-elevatrice_domain-large.jpg" alt="Card image cap">
 		  <div class="card-body">
   		   <h4 class="card-title">PLATEFORMES ÉLÉVATRICES</h4>
-  		   <p class="card-text">Amplam et oportunam re magister tempestate latrones ut undique copiis magister missaeque latius undique periculo.</p>
+  		   <p class="card-text">Nos plateformes de travail allient ergonomie et sécurité pour les opérateurs embarqués.<br><br></p>
   		   <center><a href="#" class="btn btn-primary">En savoir plus</a></center>
  		  </div>
 		</div>
@@ -129,77 +158,68 @@
       <div class="card" style="width: 16rem;">
   		<img class="card-img-top" src="http://www.cefam-atlas.fr/var/cefam/storage/images/media/images/solutions-sur-mesures/plateforme-circulaire-avec-trois-systemes-elevateurs-synchronises/337-1-fre-FR/Plateforme-circulaire-avec-trois-systemes-elevateurs-synchronises_domain-large.jpg" alt="Card image cap">
 		  <div class="card-body">
-  		   <h4 class="card-title">RÉALISATIONS SPÉCIALE</h4>
-  		   <p class="card-text">Amplam et oportunam re magister tempestate latrones ut undique copiis magister missaeque latius undique periculo.</p>
+  		   <h4 class="card-title">RÉALISATIONS SPÉCIALES</h4>
+  		   <p class="card-text">Les équipements sur-mesure ATLAS répondent à tous les besoins de manutention spécifiques.</p>
   		   <center><a href="#" class="btn btn-primary">En savoir plus</a></center>
  		  </div>
 		</div>
     </div> <!-- end col-md-1 -->
   </div>
 <div class="row" style="margin-top:1%;">
-    <div class="col-3"> <!-- ou col-md-1 -->
+    <div class="col-lg-3 col-md-4 col-sm-6"> <!-- ou col-md-1 -->
       <div class="card" style="width: 16rem;">
   		<img class="card-img-top" src="http://www.visvivo.com/uploads/ckfinder_images/images/porte_ouv.jpg" alt="Card image cap">
 		  <div class="card-body">
   		   <h4 class="card-title">GRENAILLEUSE</h4>
-  		   <p class="card-text">Amplam et oportunam re magister tempestate latrones ut undique copiis magister missaeque latius undique periculo.</p>
+  		   <p class="card-text">Solution de grenaillage à turbine ou jet libre : conception, construction du process et de la machine partout en France.<br><br></p>
   		   <center><a href="#" class="btn btn-primary">En savoir plus</a></center>
  		  </div>
 		</div>
     </div> <!-- end col-md-1 -->
-    <div class="col-3">
+    <div class="col-lg-3 col-md-4 col-sm-6">
       <div class="card" style="width: 16rem;">
   		<img class="card-img-top" src="http://www.visvivo.com/uploads/ckfinder_images/images/TUNNEL%20SECHAGE%20.jpg" alt="Card image cap">
 		  <div class="card-body">
   		   <h4 class="card-title">PEINTURE</h4>
-  		   <p class="card-text">Amplam et oportunam re magister tempestate latrones ut undique copiis magister missaeque latius undique periculo.</p>
+  		   <p class="card-text">Unités de peinture et de séchage.<br><br><br><br></p>
   		   <center><a href="#" class="btn btn-primary">En savoir plus</a></center>
  		  </div>
 		</div>
     </div> <!-- end col-md-1 -->
-    <div class="col-3">
+    <div class="col-lg-3 col-md-4 col-sm-6">
       <div class="card" style="width: 16rem;">
   		<img class="card-img-top" src="http://www.visvivo.com/uploads/ckfinder_images/images/ETUVE%20TANGER%20036.JPG" alt="Card image cap">
 		  <div class="card-body">
   		   <h4 class="card-title">TRAITEMENT DE L'AIR</h4>
-  		   <p class="card-text">Amplam et oportunam re magister tempestate latrones ut undique copiis magister missaeque latius undique periculo.</p>
+  		   <p class="card-text">Machines de lavage par aspersion en standard ou sur-mesure, en îlots ou intégrées au process de production. Filtres et gaines d’extraction d’air.</p>
   		   <center><a href="#" class="btn btn-primary">En savoir plus</a></center>
  		  </div>
 		</div>
     </div> <!-- end col-md-1 -->
-    <div class="col-3">
+    <div class="col-lg-3 col-md-4 col-sm-6">
       <div class="card" style="width: 16rem;">
   		<img class="card-img-top" src="https://i.imgur.com/0Ilm7S2.jpg" alt="Card image cap">
 		  <div class="card-body">
   		   <h4 class="card-title">MACHINES & BROSSES</h4>
-  		   <p class="card-text">Amplam et oportunam re magister tempestate latrones ut undique copiis magister missaeque latius undique periculo.</p>
+  		   <p class="card-text">Brosses Techniques pour défibrage, égrenage, ponçage du Bois, traitements de surfaces des Plastiques et Aluminium<br><br></p>
   		   <center><a href="#" class="btn btn-primary">En savoir plus</a></center>
  		  </div>
 		</div>
     </div> <!-- end col-md-1 -->
   </div>
+  <hr class="uk-divider-icon">
 </div>
 
-	
-<hr class="uk-divider-icon">
-	<!-- PRESENTATION SOCIETE-->
-<div class="presentationms">
-	
-
-Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occulte, incertum quo locante vel cuius usibus apparatum. ideoque rector provinciae tunc pater Apollinaris eiusdem nominis ut conscius ductus est aliique congregati sunt ex diversis civitatibus multi, qui atrocium criminum ponderibus urgebantur.<br>
-
-Restabat ut Caesar post haec properaret accitus et abstergendae causa suspicionis sororem suam, eius uxorem, Constantius ad se tandem desideratam venire multis fictisque blanditiis hortabatur. quae licet ambigeret metuens saepe cruentum, spe tamen quod eum lenire poterit ut germanum profecta, cum Bithyniam introisset, in statione quae Caenos Gallicanos appellatur, absumpta est vi febrium repentina. cuius post obitum maritus contemplans cecidisse fiduciam qua se fultum existimabat, anxia cogitatione, quid moliretur haerebat.<br>
-
-Eo adducta re per Isauriam, rege Persarum bellis finitimis inligato repellenteque a conlimitiis suis ferocissimas gentes, quae mente quadam versabili hostiliter eum saepe incessunt et in nos arma moventem aliquotiens iuvant, Nohodares quidam nomine e numero optimatum, incursare Mesopotamiam quotiens copia dederit ordinatus, explorabat nostra sollicite, si repperisset usquam locum vi subita perrupturus.<br>
-
-</div>
-<hr class="uk-divider-icon">		
+		
 <!-- SLIDESHOW-->
-<h2>Les réalisations</h2>
-<div class="container" style="max-width: 650px;">
+<div class="container-fluid">
+	 <h2>Les réalisations</h2>
+</div>
+<div class="container">
+
 	<div uk-slideshow="max-height: 310; max-width:640; animation: push">
 
-    <div class="uk-position-relative uk-visible-toggle uk-light">
+    <div class="uk-position-relative uk-visible-toggle uk-dark" style="max-width: 650px; margin:auto;">
 
         <ul class="uk-slideshow-items">
             <li>
@@ -225,16 +245,35 @@ Eo adducta re per Isauriam, rege Persarum bellis finitimis inligato repellentequ
     </ul>
 
 </div>
+<hr class="uk-divider-icon">
 </div>
 
-<hr class="uk-divider-icon">
+
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    
 </body>
 <footer>
-	blablabla
+	<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <img src="https://i.imgur.com/FigiNA9.png" alt="logo entreprise" class="img-fluidnb">    <img src="http://www.cefam-atlas.com/design/cefam/images/logo_cefam_atlas.png" alt="logo Cefam" class="img-fluidext"><br><img src="https://i.imgur.com/7Vbunk8.png" alt="logo Visvivo" class="img-fluidext2">    <img src="http://www.aeb-brosserie.net/images/logo-aeb.jpg" alt="logo entreprise" class="img-fluidext3">
+    </div>
+    <div class="col-lg-4"><p class="adressems">
+    MECA SURFACE<br>
+    Marc PERRIGUEY
+    <address>26, Rue du larrey du pont<br>
+    21360 VEUVEY SUR OUCHE<br>
+    FRANCE</address></p>
+    </div>
+    <div class="col-lg-4">
+    <p class="adressems"><img src="https://image.flaticon.com/icons/png/128/25/25377.png" alt="tel" class="img-fluid" style="max-height: 40px;"> 06.10.49.57.34<br><br>
+    <img src="https://cdn3.iconfinder.com/data/icons/basic-interface/100/mail-128.png" alt="mail" class="img-fluid" style="max-height: 40px;"> marcperriguey@gmail.com</p>
+    </div>
+  </div>
+</div>
 </footer>
 </html>
